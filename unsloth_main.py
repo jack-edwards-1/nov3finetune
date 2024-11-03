@@ -14,14 +14,7 @@ from unsloth import is_bfloat16_supported
 # For secure token input
 from getpass import getpass
 
-# Step 1: Authenticate with Hugging Face
-def get_hf_token():
-    """
-    Securely prompt the user to input their Hugging Face token.
-    """
-    return getpass("Enter your Hugging Face token: ")
-
-hf_token = get_hf_token()
+hf_token = "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"
 
 if not hf_token:
     print("Error: Hugging Face token not found. Please provide a valid token.")
